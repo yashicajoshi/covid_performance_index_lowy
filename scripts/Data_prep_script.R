@@ -12,9 +12,8 @@ library(magrittr)
 
 library(plyr)
 #setting working directory
-##Ayush -  change your working directory to wherever the data is and replace \ with \\ using find and replace
 print(getwd())
-setwd()
+setwd() #blanked out on purpose
 print(getwd())
 
 
