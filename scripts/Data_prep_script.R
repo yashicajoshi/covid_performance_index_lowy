@@ -14,7 +14,7 @@ library(plyr)
 #setting working directory
 ##Ayush -  change your working directory to wherever the data is and replace \ with \\ using find and replace
 print(getwd())
-setwd("C:\\Users\\yashi\\OneDrive\\Documents\\Covid_lowy_index\\Data")
+setwd()
 print(getwd())
 
 
@@ -108,7 +108,7 @@ sapply(final_df,class)
 state_codes <- read.csv("State_codes.csv")
 head(state_codes)
 colnames(state_codes)
-colnames(state_codes)[grep("ï..State_name", colnames(state_codes))] <-"State_name"
+colnames(state_codes)[grep("Ã¯..State_name", colnames(state_codes))] <-"State_name"
 
 final_df_v2 <- inner_join(final_df,state_codes,by=c("State"))
 nrow(final_df_v2)
@@ -198,7 +198,7 @@ nrow(final_df_v3) #matches with above line product = 11232
 ##  Loading population data
 
 pop <- read.csv("population.csv")
-colnames(pop)[grep("ï..State", colnames(pop))] <-"State_name"
+colnames(pop)[grep("Ã¯..State", colnames(pop))] <-"State_name"
 head(pop)
 
 final_df_v4 <- join(final_df_v3,pop,type="inner",by=c("State_name"))
