@@ -1,4 +1,4 @@
-# covid_performance_index_lowy
+# Lowy Institute Covid Performance Index
 Lowy institute Covid performance index measures the comparative effectiveness of countries’ handling of the COVID-19 pandemic using a number of criteria. The two R scripts apply the same methodology to Indian states to track performance across all Indian states.
 
 Methodology of Lowy Covid Performance Index:
